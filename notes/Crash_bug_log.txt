@@ -1,0 +1,13 @@
+List of Bugs and crashes
+
+
+Bugs:
+- When showing dealer hand with hidden card, total is incorrect (addressed)
+
+- got a joker followed by a king and got a value of 30. should overide to 21. (addressed)
+
+- game does not know if you get a black jack or what to do if you get one. (addressed)
+
+
+Crashes:
+- non human player tried to bet with no money (addressed)

@@ -1,0 +1,49 @@
+Game loop algorithm - 7/2/22
+
+- Greet the user
+
+- Ask if they would like to play five or ten rounds
+
+- init player(s), init dealer, init main_deck
+	- main deck calls init cards
+
+- main_deck deals a two cards to each player and dealer
+	- Dealing is done clockwise and makes two passes
+	- ex: dont deal two card, next person two cards etc.
+	- The first card the dealer gets is visible, but the second will be displayed as hidden
+
+- players (clockwise) decide whether to hit or stand.
+
+- when everyone (excluding dealer) stands
+	- the dealer reveals their second card.
+	- determine hit is called, if true, draw a card, call determineHit again
+	- if false, end dealer turn.
+
+- if dealer bustStatus is true, players win.
+	-players who busted still lose bet.
+
+	-Else: for those who's bustStatus is false, their values are compared, and the winner is the one with the highest
+	else: if the a player has a black jack, they in and everyone who isn't tied, loses
+
+	else: if dealer has the highest number or a black jack, all players lose.
+
+	else: if dealer draws, players drawed gain nothing, and losers lose bet.
+
+- round ends, main deck calls back all cards,
+	- loop repeats.
+
+- loop ends when maximum number of rounds are completed, or when player runs out of money.
+
+- Exit loop
+
+- Final results message (previous round summaries)
+Record these with structs, check dev notes
+
+- goodbye message.
+
+
+
+Notes: 
+if dealer busts, all non busted players win. 
+Winners get back double their bet
+

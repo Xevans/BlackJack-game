@@ -1,0 +1,60 @@
+Structure
+storing game summary.
+
+In Player.h, a structure exists
+
+Structure called Summary
+
+int round; // which round was recorded
+int player_money; // money player had at end of round
+bool win_status; // records if player busted OR lost to dealer that round
+
+
+at the end of each round, this data is stored into a stucture, and put into an array or vector that is the length of the requested number of rounds.
+
+when the loop ends, a game summary is displayed to screen using recorded data in array.
+
+Dev Log
+
+7/2/22
+
+Conisider prompting enter to continue during player turns. 
+
+show player 4 actions
+press enter to continue...
+
+etc...
+
+Consider having card value calculated as a member in class Player
+
+
+7/5/22
+
+Game loop has been completed.
+
+Added the following functions
+-
+
+Next step is 
+-researching proper winnings
+-adding end of game code
+-review driver algorithm
+-dry run and log bugs/crashes/ideas
+
+7/6/22
+
+Remove no money game over condition. Allow negative money (debt).
+
+7/7/22
+
+Installer has been created for game
+
+-improve readability
+
+-show whther or not player stands AFTER showing value of their hand.
+
+7/8/22
+
+- pick a winner between the players based on money remaining
+
+- Tell player which round is currently happening
